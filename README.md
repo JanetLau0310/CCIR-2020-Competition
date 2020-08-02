@@ -1,6 +1,6 @@
 # CCIR 2020 Competition 
- Sentiment Analysis of Chinese Netizen during the COVID-19 Pandemic<br>
-Also the question of the 26th China Conference on Information Retrieval in 2020<br>
+The question of the 26th China Conference on Information Retrieval in 2020<br>
+Sentiment Analysis of Chinese Netizen during the COVID-19 Pandemic<br>
 [For more detail](https://www.datafountain.cn/competitions/423)
 
 ### Introduction
