@@ -1,9 +1,9 @@
 # CCIR 2020 Competition 
 The question of the 26th China Conference on Information Retrieval in 2020<br>
-Sentiment Analysis of Chinese Netizen during the COVID-19 Pandemic<br>
 [For more detail](https://www.datafountain.cn/competitions/423)
 
 ### Introduction
+__Sentiment Analysis of Chinese Netizen during the COVID-19 Pandemic__<br>
 Given 100,000 labeled Weibo ID and content as the training set, we want you to develop your own classifiers to predict the sentiment labels (positive, negative or neutral) of 10,000 test sets.<br>
 Also, we provided additional 900,000 unlabeled corpus for further reserach.
 
