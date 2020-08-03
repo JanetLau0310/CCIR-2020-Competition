@@ -205,27 +205,6 @@ for dirname, _, filenames in os.walk('/kaggle/input/bert10fold-model/'):
         y_test_hat = np.argmax(test_preds, 1)
         test_vote_count += to_categorical(y_test_hat)
 
-for dirname, _, filenames in os.walk('/kaggle/input/bert10foldmodel-6to9/'):
-    for filename in filenames:
-        print(os.path.join(dirname, filename))
-        model = torch.load(os.path.join(dirname, filename))
-        model.cuda()
-        model.eval()
-
-        for i, x_batch in enumerate(val_loader):
-            y_pred = sigmoid(model(x_batch[0]).detach().cpu().numpy())
-            val_preds[i * batch_size:(i + 1) * batch_size, :] = y_pred
-        f1_score = calculate_F1(y_val, val_preds)
-        print(filename + "F1:" + str(f1_score))
-        y_val_hat = np.argmax(val_preds, 1)
-        val_vote_count += to_categorical(y_val_hat)
-
-        for i, x_batch in enumerate(test_loader):
-            y_pred = sigmoid(model(x_batch[0]).detach().cpu().numpy())
-            test_preds[i * batch_size:(i + 1) * batch_size, :] = y_pred
-        y_test_hat = np.argmax(test_preds, 1)
-        test_vote_count += to_categorical(y_test_hat)
-
 print("线下测试F1")
 f1_score = calculate_F1(y_val, val_vote_count)
 print(f1_score)
