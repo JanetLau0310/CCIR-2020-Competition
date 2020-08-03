@@ -15,7 +15,7 @@ Top 10% through all the teams.
 
 ### Abstract:
 We chose the BERT model which was already trained by Google, then do the fine-tunning work. <br>
-We considered a single weibo context as a 'sentence', then putting into BERT, which can do the single sentence classification task, gaining the integration results after backpropagation process and 10-fold cross-validation.
+We considered a single weibo context as a 'sentence', then putting into BERT, which can do the single sentence classification task. Fianlly, we trained the 10-fold validation model and combined all the classifiers using a voting strategy to get best results.
 
 ### Improvements
 1. By the limitaion of GPU memory, we did not use the 900,000 unlabeled data to build the percise model.
