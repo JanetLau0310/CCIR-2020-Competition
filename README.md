@@ -14,9 +14,8 @@ F1-score:0.725<br>
 Top 10% through all the teams.
 
 ### Abstract:
-1. Using the provided labeled data, training the hyper-parameters with Bi-LSTM Model, and predict the results by the combination of mean pooling and max pooling.
-
-2. Chose the BERT model trained by Google, then do the fine-tunning work. Considered a single weibo context as a 'sentence', then put it into the BERT model, gain the integration results after backpropagation process and 10-fold cross-validation.
+We chose the BERT model which was already trained by Google, then do the fine-tunning work. <br>
+We considered a single weibo context as a 'sentence', then putting into BERT, which can do the single sentence classification task, gaining the integration results after backpropagation process and 10-fold cross-validation.
 
 ### Improvements
 1. By the limitaion of GPU memory, we did not use the 900,000 unlabeled data to build the percise model.
