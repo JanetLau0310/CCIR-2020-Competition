@@ -14,8 +14,9 @@ F1-score:0.725<br>
 Top 10% through all the teams.
 
 ### Abstract:
-We chose the BERT model which was already trained by Google, then do the fine-tunning work. <br>
-We considered a single weibo context as a 'sentence', then putting into BERT, which can do the single sentence classification task. Fianlly, we trained the 10-fold validation model and combined all the classifiers using a voting strategy to get best results.
+1. We chose the BERT model which was already trained by Google, then do the fine-tunning work. 
+2. We considered a single weibo context as a 'sentence', then putting into BERT, which can do the single sentence classification task. 
+3. Fianlly, we trained the 10-fold validation model and combined all the classifiers using a voting strategy to get best results.
 
 ### Improvements
 1. By the limitaion of GPU memory, we did not use the 900,000 unlabeled data to build the percise model.
