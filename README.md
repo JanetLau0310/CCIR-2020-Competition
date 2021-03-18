@@ -11,7 +11,7 @@ Also, we provided additional 900,000 unlabeled corpus for further reserach.
 
 ### Result: 
 F1-score:0.725<br>
-Top 10% through all the teams.
+Top 11% through all the teams.
 
 ### Abstract:
 1. We chose the BERT model which was already trained by Google, then do the fine-tunning work. 
